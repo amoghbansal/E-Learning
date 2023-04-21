@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics-12</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background:rgb(119, 38, 112);
+        }
+        .box{
+         background-color: rgb(207, 111, 143);
+         margin-left: 250px;
+         margin-top: 50px;
+         margin-right: 350px;
+         margin-bottom: 50px;
+         border-radius: 30px;
+         box-shadow: 20px 20px rgb(0, 10, 10);
+
+         
+        }
+        .main{
+            width: 300px;
+            height: 400px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 40px;
+            text-align: center;
+            padding-top: 110px;
+            padding-left: 20px;
+        }
+        .btn{
+            width: 350px;
+            height: 50px;
+            font-size: 1.1rem;
+            font-family: cursive;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            transition: all .5s;
+            overflow: hidden;
+            display: inline-block;
+            border-radius: 25px;
+            margin-bottom: 20px;
+            background-color: rgb(253, 230, 201);
+            
+
+    
+            
+        }
+        #one:hover{
+            background: thistle;
+        }
+        #two:hover{
+            background: skyblue;
+        }
+        #three:hover{
+            background: thistle;
+        }
+        #four:hover{
+            background: skyblue;
+        }
+        #five:hover{
+            background: thistle;
+        }
+        .btn::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 100%;
+        }
+        .btn:hover::before{
+            transform: skew(-45deg) translateX(180px);
+        }
+        p{
+            font-style: normal;
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            font-weight: bolder;
+
+    
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover
+        {
+            color: black;
+        }
+        a:visited
+        {
+            color:darkmagenta;
+        }
+        a:visited:hover
+        {
+            color:blue;
+        }
+        h1,h2
+        {
+            text-align: center;
+            color: black;
+            background-color: rgb(187, 169, 169);
+            height: 50px;
+            font-family: 'Poppins', sans-serif;
+        }
+        #one{
+            box-sizing: content-box;
+            height: fit-content;
+        }
+        img{
+            margin-top: 15px;
+            margin-left: 100px;
+            height: 400px;
+            width: 350px;
+            display: inline-block;
+            border-radius: 15px;
+            margin-bottom: 100px;
+            margin-top: 90px;
+        }
+       
+    </style>
+</head>
+<body>
+    
+    <h1>PHYSICS &nbsp; PART-2</h1>
+    <div class="box">
+    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEhIVEhUVFRUVFRUWFRUVFxUVFRUWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGi0dHR8tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAQgAvwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAGAQIDBAUHAAj/xABNEAABAwIDAwcHCAULAwUAAAABAAIDBBEFEiEGMVEHEyJBYXGxMkJygZGhshQjJFJzksHRM1SCk8IVFiU0RFNidNLh8DVj8RdDVYPT/8QAGwEAAgMBAQEAAAAAAAAAAAAAAgMAAQQFBgf/xAA2EQACAQIDBAgEBgIDAAAAAAAAAQIDEQQhMQUSQVETIjIzYXGBsRSRwfAkQlKh0eEjshU0cv/aAAwDAQACEQMRAD8ABjUuDnC/nbj2FR1U9uv2dyqVL+m7XzneJUUj7rBwPVRihTIeJ9qbmPErW2b2emrXuZCWAsbmOckC17aWB6yt13JlW8YD/wDYf9KW6kIuzZbqQi7N5gVc8SvFx4laWM4JPSvDJ4ywnUG4IcBvLXDQp8GByOpX1gLebjkEZBJzZiGG4FrW6YRXVrhXja9zNbK7qcfaVIKh/wBZ33iolqUOAyy081S3LkgtnuSHa28kW13qNpakdlqZ/wApk+u/7zvzS/KZP7x/33fmtLDdnpqiCWeLK4Q6vZc57WvcNtqLX6+orHUTT9CLdbsuBNzzt+d33intrJeqZ4/bePxV+nwCV9M+r6LYmHLdxILnaCzBbXU26lZ2Z2WnrC4sysjZ5Urz0QbbhbUmxuqc4pXb0KbhZt6Iyf5Rn/v5f3j/AM0/+Vagf2ib97J+a3sf2HqKaPnmuZPENXPj80cSOHaFj4DhElXMIYi3MQ43cSB0Rc7lSqRcd5PIicGt5WsQDGKn9Zn/AHsn5p4xuq/WZ/30n+pU54srnNO9ri024tJB8Fs7PbK1NbrEyzBoZHnKwHrAPWe5E5JK7I1TSu0rehU/l2r/AFmf99J/qSjH6v8AWp/30v5oo/8AToXy/L6fPuy9vDyr+5YG0Gy1TR6ysuwmwkYczCeoX6j2FDGrCTsmLToydlb5L+CsNoq39aqP30n5p42qrh/a5v3sn5qLBMHlq5RFC27jqSdA1o3uceoImqeTibK4xTxTyN3xNNnX4XJOvYbKSqwi7SdmVNUo5NL5L+DBbtjiA3Vk3716eNucSH9sm+9fxWFLGQSCCCNCCLEEaEEHrURTSOlD9K+S/gJ28oGJj+2SesMPi1TQ8o2Jg/1t3cWR66ejdCSaDqrAdOmvyr5IuSDU96isppPKPefFRpZqSDjkt8ur/wAs7xQbHNILWcQexxCOOSUgS1RcLgU5JHEZhcJo2kwhurcMJPBzhbxPgk7zU5ZX09hKk1Ukt1vTly8SbEZXz4EySe7nsmDYnu1cW3y7+vS4v15QquGj+gqn/Nt+GBZe1O1UlZkZkbDCzyI2bh1XJsL6dyJ9kMQZT4PPLJC2doqdY3GwN2wga2O7fuQyi9xf+k7AuEoQTazclkc2yo62Wb/RGI97fBqd/Pik/wDiYPvt/wDyWzHjEVVhVc6KlZS5Q0EMIIceibmzQrnKTWcbZrig60pWScbZriuYC7H46aOpEh1jd0JRxYTqbcRofUtfaHY9wrmQ04vFUnPC4bmtOr79jbkjssgw9a6psfjsjcKqHWDn0oc2Fx1IDxp7L+wAdSKpeL3lq8i66lTfSR45fPQH+UDEWNMeHwaQ0oyut50o3k93iTwV6jgfPgeSnuXRzOdOxvlOaA4m4G/QsP7KAJHEkkm5JJJO8k6krV2ex+ail5yE9j2HyXt4OHgd49t6dO0UlwdwpUGoKMdU7+b8RMIx6opWyNifZsrcrmkXHpAHQO3hbnJS3+kG+hJ8K1cawimxGB1bRt5uZgvPBx0uSBxsCQRo7vWbyUD6e30JPhQzknCTSs+JTlGVKbSs7ZmPheDmqr/k+4OmkzEdTA4lx77D3rZ252jOY0VKeap4fmyGaZ3DyrkdQN+8g3Vrk6sMWkv1ie3fnB8LoMxKNwllDvKD3g94cbomt6efBIiipVbP8qX7lI2RBhe1k8MElO4CaKRha1sl3BhPWOzf0e714Qj0um5Ux2krMfOmpZPMOOS85jVwtdlmlgtE7cbgPBse9zT6kKxS1FFUZhmjljcQbj2hw84H3qtSzvjc2SNxY5pu1w0IIXRKOrp8Zj5ioDYaxrfmpRoJLDdbr67t9YQSe63J6PUzVI7jc2rxevh/RzjEKp80j5ZHZnvOZx3XPcFVV3EaJ8Ej4pG5XscWuHaOHZ1qsWpqasMtyIyExo1U+VMy6okwJRLMm8qNPfvK8guOsHHJV5VX/lX+IQLxV7DcVmpy8wyGPO0sdYNN2nq6QKpWQpWbfMlODU5S52/ZWER3hn/Qaj/Mj4YUCAK63E5mwupxIRE92dzNLF2mpNr+a32KSjexdWDklbg0/kU0fbI/9IxD9nwCAldpsVmjikhZIWxy25xtm2dbdqRcepVJbysXWg5xsua/ZlGyP9kB/RGI/s/CgALRpMWnjikgZJljl/SNs05rCw1IuPUikrkrU3ONlzT+TM870VYlsiW0sNXTuNRG9vztm6xu6+iNbDceBHahchbez201TRE8xJZrjdzHDM0ndcjqNusKnfgXV6R2cH6PRhRyVUMsb5al4McLYXhznaNcbgi199gDr1X7VV5MyHYndujS2UgdhFwszHds6ysbzcjw2PrYxuUO9LrI7LrMwzEpaeTnYXZHgEA2BsDodCLJbi2m3qxHRTkpt2TkrWWmjXzLFPiLqauNQ3UxzvJH1m844Ob6wSirazZv5YPl9B86yXWSNtszXecQOPEb734oAkeXEk7yS49pJ1V/CMYqKUl0EroybXtYh1t2Zp0KuSzTQydOV1ODs0vRoruwyXNk5uTN9XI/N7LIipthyymkqayT5KA0800gF7n+bdvA7rb9VZPKTiGW3ORjt5sX8be5C2LYrPUuzzyukI3XtYDsAsB6gp1n4FPpp62jzad36cjbwHZVtZSyvhkLqiNwPNaAFnYesnW3aLdaj2S2dqnVkWWKSPm5Guc9zXNDA03OptqbWsOKxsOrpYHiWF7o3jzhwO8HiOxbVft5XysMbpsoOhLGta4jr6Q1Hqsre/w0fMGpGrdpWafPh/KIeUWqZLiEzo7EDKwkbnOa0Bx9ot6kM2TikCOC3VbkEobsVE9ZMtqnppGoRIFkr968Qlcm5UIwnpabPm6QblYX6gm4G8aKzLgs7d7LdAvN3N0a22Y7+q49oVYF1za4uCD3Hq9ysGunN7udq3KbAC7TvBsNb9qrPgFZ8CSbBJGjQtcbnRrhfQNJs293eWNyjODy3tYHhZ7LEkuFmm9nOux2g16JSiqnyluZ9jru69L2Nri+VvsTvltQSTmfcgA6d/Zoek7Ua9I8VOt4EtIacIeJmQkgF+WxJFrOFwTw0470hwmW2YAWsXE5maAC93a9G41AO9I+eYua8l5c22Ukai26xsnGqlLchc7KBltbqsBYm2ugA13BTPwJmMjobtDnPa0uuWNOa7gDlOoFhqCBfgVMcFmvo3N0i3ymjcXC9ibgHI7U8FGyrka3IHWGu8NJGbflcRdt7DcVKMXl+uCQ4OvlYTcEuFyRcgFziAdBfRR73AvrcCFlA/OxpAaX2LbkWIdo3Ubrninz4a9ocTl6BcHWPW10bXD1GQD1FL8veS12YXYOgQGi2t79pub3SSVr3Ahz7h177tb5Cb+uNp9SrMrrFRqfZOACflVltkNk5g0TxH2JS1UVcYRoowFMWJA1UXcjKje3rUxUbgrTKICvFPcE0hEmCxiZfVSEKO2qJC2d/dVRDq9ycyqj4e5ZpjupGRrx7dLm/v0M/Ry5GoKxnA+xO+Vs4H2LNDU8BVvUub+/QromaQrG9vsStrG8D7FnAJ4KnSUeb+/QHoTQFU3gfYnCpZw9yzwUoKONakuPuC6Jf55nD3L3OR8B90Kjdear6aj+oroi6XxfVH3QvDmT5jfuhVQkCLpqP63+4PRFrJD9Rv3B+SDeU1sfNQ5Ghp5w7gB5pRVdCPKMbxQ/aH4VpwlWDrRUZXGUqdppijYiD68ntb+SHtrcEjpTGIy45w6+Yg+Tlta3eulM3II5SBrB3SeLEnAYutUxCjOTadzXCbcrNgUUcYVshTyQxvcX3exrjZwtcgE20QOut7Pj6ND9kz4Qt+1K1SlTi4O2f0GTk7GR/Mim4yfeH5Jn8xqX/uff/wBkVFMK4fx2J/WxSk+YKu2HpOEn3ykOxFJwf98onKaUSx2I/W/v0GKTBc7FUn1X/fKjOxVJwf8AfKKbKCRMjjcQ/wA7C1JmBPCbENAnrG9QGKAnhNCcgYIqcAmpQqKHL1l4JQqBFa1OAXglCmYDYtl6yWyVFYETKhHlDHzUXpn4UXoV2/b83F6Z+ErZs/8A7MPP6BQ7SCcBBHKOOlB3SeLEctQTyiDpQ90ni1Fsxfio+vsy6b6wDvC6zgI+jQ/ZM+ELlLgur4F/VofsmfCF0ts93HzG1NEXUjkpKRy86AiNyYAnlRlyJDENcoHqZxVZ5TYLMbEtQnogpySLyR3JQUMtRZ4FPBTQnBCymeT2JLJzQhBbFSgJQFI1qoW2NAUjV7InhqbGItyEC9lUgbxCXIn9GDvEJCGdu2/Nx+mfBFZahrbaO8cfp/gVpwUbYiAcJZm+1BfKF5UPdJ4tRu1iDtvY9Ye5/i1Vs5P4mPr7MKm+sA72LqOCD6PF9mz4QubPiXTcEb9Hi+zZ8IW7bPdR8/oNqPItOURU7mqFwXnikRvKicpHBNKNDUQyFQEKeQKEp8BiLMe4KRqijOgUzQkyFigKQBZWJY3DAOm4X4IVquUVoJDG3WmjgK9fOEcv2EVKsIdp2OgjRK1cpk2/mJ0Ckg28nG8XWr/hMTbh8xDxdLmdXaFI0Ln+Hbe3ID26cQjHC8ZimtldrwKy1dnYij2o/UiqRl2Xc1WtUgCWMKaNiKlHLIVKQzm7puQhWREl5taNwVvlYMQ9tlH82z0/wKKnRrF2mpS5jbC9na8Ron4aFqsRlOfWRbDdEKbcN1i7n+LUYBuiGdsIrmPuf4tSsHG2JT8xtN9YA5WrpGDD6PF9mz4QgKqisj/CP0EX2bfALRtju4rxHzeRO4qJylcoXheeRcSMpjlI4KNwRIciNygcpnqBxToDETQeSEO7ZbSilZYeUdyIYPJC43yhzONS4E6DcujsvCxr4i09FmY8XVdOm5Ix6zEZZ35nOJuVdwrCnyHQFUMMjBdr1ao9wKZjSDxGg7e0DqXqq9Too2ijl0aXSO8mZ8ezD2kX92t/ySuwEjNcWtqNN6PWXa0kyR5uicttR12tx1SioBtzpDddBlB0H+/Fc/42Zu+Hho0c1FC5pFmm3aCtTDpHMIc0kWR1V08ZYXF2ZpBFyLEndog17WhxF7arRSxHSpqxlqUVDNHSdlsW55tneV4opjaud7JutI2xXSYmrlYqhGFTq8QZzyuODE0x6qYBesh3MhF2My6LI2gj6LTe3S/BbaoYoy7R3plJddB031kNc26G9rWfo+538KKXBDm1Y8jud+CTh1/nXqaKMusBFSEa4UPmY/s2+CD6tGeGD5mP0G+Cra3dx8zbJ5Ehco3J7mqNy88HEhcmkpz00oxyI3Ks8q2WqGVoTIsYmPhHRC5dymYM4Sc8BcHeuo03kDuUVfQsmYWPFwVrwWLeFr7/AA4mavSVWDiz57glylFWD4kBl6jfetHaPk/cwl0PSG+yD5aGeM2LXBeuhWoYqN4yOQlVoPNHVKXH4YxcMEjmm5Lh5x3ABexDaNpIc1oDza/AcRZcqZVPbvup46qQm/WlPAR1uNWMy0OxbPzxVz5aeo3n5yMg5XADRwFu8G3enYlyfPBLoJQ8fVf0XW4Zhofcub7OYnJT1MMxv0XjN1XaTZw9i7FVbRgaNO/dZbqVKChbSxzMRVrKreOj5mPgtK+meDLE5tj1i/sI0XRKCoa8dFDlI2ok1LA0H65A929EGHUJZvLfVdczEvDuXbuPVRuNpZM0AEhUwamPbbqSuhurxYCkRqliN7C3H3K1zo4qriB6P/OCCMXGorjodpCyIb2rOjLD638KJCNEObV7mftfwrNQ79eppo9oDpzYaozwr9DH6DfBBVWeq6MsKPzMfoN8FNq93HzNr0LL7KF6leoXOXnZBQIXJhClcFE5UmPiIVWkepnqpNvTqazGJFikd0B3KRQU3kjuCnVT1BH3UE1BE/ymNPqUt08IE2s1kUYVZshTSeZbuU1HstTMFsgPetlKE34uva2+7eYvcjrYCds6Bg5uCGMZ5HBo7ybanhqjLZ/CWU7BqHyW6TyW3JAG640H/NUK7ZZopoKkAuEbwSOwHUey6KIMQEzM8bg5utspadNCL6b/APhXapRrVcLCEJWi+0/HkcbHy3KiuuBux1Fjbv3lu4W4DfqteGo6/fccbIdY+/Hr6xpr3K/A+9iWgaEAE387jZdGhh4U4rn6cPXic3pG3mbrJLjePalJWfT1BygHU7vHrVrnVbpyqVXG/lyGb6SuV66MEEiwI1CxDiIezXSzrewFbs0nRN+B6+tAFU+SIkPboXF2mo9oTFRqRyktOPM04arGTzYbZ9ELbYzW5scc/wDCp4dpoToXWKxNr65juayuB8vr9BcylCca63k+JvpRV7g/UvujnBz8xF9m3wC57NLdH2DH6PF9m3wQ7Y7uPn9DW1kXXlREXTiEyRy882FFWGucoXFK9yhe5XFDoo84qtKdVM4qB5TooYiWk3BT2VWkdp69FYBVVF1mBwHBStUIcpGlKaJYkShICvXQAkdZSMlaWPFwUG1WEVdE4vpH3Yb3jdq037Oo9oRwCnXWrDYypQulnF6p6CKtGNRWkgYw3bgtFqimkYessIcCb79bEe9bUW19M4eU8ddiw9TrjcFZdAx2haD6k3+TYfqN9i6VHadGEnLcab5PL5MwT2fDROw5m2VO22r3kcGWv7bdi9Tbatc8MEbmix1e7rAvuA/FPbh8Q8wLn+O1l6lzWaBptp1Lp4PEU8VX3oRd0Jng4wjzDTENpr9f5BUqKR1TIGB+XMbX4LDp8Oe5ma1x3e+68yQscNcpHAdQ6z2r0sKMn2hUaUIrLUsbSYDzMhaXZjxaR1+pYkuGX1zuHruiyeme9oeGuLfrkWzf+Fk4thc0IDnCzTuKlSnSir2VwoXeRhvppG+TZ/uKJcA2qj6FM/ovaA32cUuEYBNOznGgFtj5wBJG8IJx6EtccwDHtOnUe4rDjNl069K1/wChkMQ4vJ38DsXPDq1UUj0NbD4tz0ADj0m6IhJXz+vRdGo4PgdenaS3lxGOTC1PcUl0KHkJaoy1TOUTnJkdS0RxOtfvPirDXKq0anvPipWFHUWbKWiHgqdpVFs2p3KxE+4QzpyirsGM1J2RYBS3S0sWYkXtorYoRxPuS1TbBlUjF2Kl04FWxQt4n3Km8WJHBDKDRUZqWgt1KHKC6cEDRbRPfRcux+Mw1bs+jXG4PVddMzLLxzBo6ltnDXqK6Wy8d8LV3paMz1aO/GyL2D4u2OiILWWNxc2JJtfd16HegurxKPM0tAvc5m9Q4arHrsDq6Y9C72A7td3esaWqew3fG5oPZde/oY6hUW9B6nJdFwbujpNJtU50fNX3HobrdqfiOLzSxZJR0R2bh1FDeyOL4ex16qR7dDujcdercFsYvtzh4h5uOOSV19H5S3Th0rJ85UW1cDes7JF7k7xoNmkpSdHDPH6TfKFu7X1Le2jwOiqATNE3MRbO3ov+8N571xum2hMVTHOxmXK+93anK4EEadhKv43ttI4nKb8exLdSGdjJWozdS8crkuI4C6iJdS1JI35X6H7w3+xNodvpYzlnbftGvvCGjW1UvOS+WyIBz9QAAXWboTd2ttBdJhOG1FWTzdMZmsJLxHobO1377N925c7EYOhX7cTbRr1aatcP28oFMd+i0KXaymeNHgLibhqApdG2O/Q6aixuQNRv3X/8LnS2Hh32W0altCa1SZ3yKrY8Xa4FI4rieH4rPCA9j8w85uvR1sM1+NjuXRNmNpm1LbONnDeFzMVsmpQW9HrI34fGQqu2jCbznek7xTr2UZvnd6R8SnOK5tRdZmqPZRXJ1VynOioE6nvVylOifX7tGal2zUw3yj3fitK6ycOOp7vxWms0ckDW7Y8FZc/lHvK0QVlznpHvKCpmi6CzFBS3TQUpKTY0jgV66ZdeBUsVYe4XQpt/CwQMNgPnAN3+ByKgUKcox+jx/aj4HrXs9tYmHmUlzNiLAqctB5pu4eAQ3tzh8UQhyNDb85ft8hGtOei30R4BB/KO7SDvk/gWjAVqksTFOTaz9myoxV9DnWMyWsm01fG1srMhJfkyPJGZgBvI3LudmFxqepPxKPMAbXt1LLrS3NdrMgNyG3Jtc6aleyo23bHHxsXGo29Bs2pba2oFteJtrcm3rVoOfCA5k2XOHgtjkdmbY2LZLW32Ft4IstfAoqWohdTPEdPPmDo6hx6BaP0jJT5u64PbZYtTHK9zv/c5sBpc0aBrbMadBu3e5MRjtxKsjzcnQX4Cw9StTUT+bEmSTKbAvLbNB4DiDx03KGB7wWusXCMg7rtaL316rXRhim3nyil5h8AJAIDg6w1INy23ZoN2il2i0k9XYFKaSVsMoDAY35GyOLAS0gktDX723PDfZP2fqiyYFulwRb1LPJ/5xRTsbgrpH84W2aAbdpItdBXnCFNuegVCnKVRbp1aU9N/pO8Skf1JtQem/wBN3xFRPK8RVj135s9JB9VeSKFTXZX5ebe82zHKGmwuR1kcFq0UwcwOabg6g9hWDUse6c5Xlnze8AHz3cdyfKXMEbY2uIi6ZsRuGlnXOtwX7r620W2pRUoRjHJ/0/vIRTtvhbhruke5aYKD8KaTUXIADnSguuSX9DyHC1rakg6+T2rdwaFrGuAaG/OSjTgJHBvqssk6Kgr35cvHx8CqvaPPxwBzm8zKS2RsZ/R2zOALfP3EOHtSSnpE7tdyx6mui5yT5xo+lU53jc1kYcfVY69i0KmXpHvUxNNJKytf+gqKzJg5KCqocnB6xuJo3SyClBUAcnZ1ViWJwUKco/8AV4/tR8D0TB6FeUh/0eP7UfA9asArYmHmRahbT+S30R4BBnKU7SDvk/gRhA7oN9FvggvlKdpB3yfwItnL8VH1/wBWCgLJRvT7Jw1VJC4izzGOkEBly63ss76JB9mF2dqVZ0oRlTdnf6ElFTVmrnOq/k8nZcsOYdSxZ9m6pp/RO7bXPvXcyVEQOCyU9u112kmY3s+k9Mjh0WDVYDmtZI1rxZwBIDgDcBwG8X4qzSbI1LtMlr8V2N7WjqCYbJstu1XpFIqOzKaerATBtg2tIdKbngjGKnZGA1gACncVC52qwVcVVru9R38DbSowpK0FY9Uu+cf6b/iKjcV6qPzj/Tf8RTLqVl135v3ZIdleS9iu52qt0h09aoOOp71cpXaJlbuzPS7Zq4Yeke5aqxsPd0vUtTnFiuXV7RLftWRVnpu7ytIOWPUu6Tu9TUulqeBTrqG68HKrGm5OHJwcq+dJzhU3SFnOhflEfenZ9qPgciDOhrlBP0dn2o+By1YGP4iHmU8kFtPJ0G+iPBB3KS/SDvk8I0TU1Q3I3XzR4IS5RZAeYt/3P4EzAQaxUcufswd6NsmB5XWdl3fRYfswuSXXUtm5x8lh18wfiujteN6UfP6ETXE38yic5QGpbx9yifUt4rz6psLejzJnuUb3qu6rbxUUlW3ff3JqpvkXvx5llz1ETqq3ytp1/BM+VAnemqmynOPMvVn6WQf43/EVGUi8mV+8fm/di6fYXkvZFN/lFW6Xd615eR1ewIpd4aNBJ0vUrvOry8sE9Q6vaF51ZdS/pHvSLylPMulqRmRIJF5eTt1DxvOJQ9KvKNFj8yGtvXfMM+0HwuXl5aMEv88PMGegTU2HHK3pDyR1HghPlEpizmNb353d+x+a8vKYCtKWKSfj7MzqKTAoLqmzdATSwnOBdg01Xl5dHa8nGnG3P6Mu1zROGn6496gdh7vrD3ry8vPqtIHdRDJh3+MewqP+SyfOHs/3Xl5O6eaRe4hBhB/vB7P91ap8GAGd7+jfhv8AfuXl5MjXm5JNgSikj//Z">
+    <div class="main">
+        <button class="btn" id="one">
+            <p>NCERT E-Book</p>
+            <a href="https://ncert.nic.in/textbook/pdf/leph2dd.zip"><p>Chapterwise solutions class 12 Physics</p></a><br>
+        </button>
+        <br>
+        <button class="btn" id="two"><a href="https://www.ncrtsolutions.in/2019/03/class-12-physics-ncert-solutions-pdf.html"><p>NCERT Solutions</p></a></button>
+        <br>
+        <button class="btn" id="three"><a href="https://www.learncbse.in/ncert-exemplar-problems-class-12-physics/"><p>NCERT Exemplar Solutions</p></a></button>
+        <br>
+        <button class="btn" id="four"><a href="https://www.learncbse.in/important-questions-for-cbse-class-12-physics/"><p>Important Questions</p></a></button>
+        <br>
+        <button class="btn" id="five"><a href="https://www.selfstudys.com/books/cbse-sample-paper/state-books/class-12th/physics/25106"><p>Sample Papers</p></a></button>
+    </div>
+    </div>
+    
+</body>
+</html

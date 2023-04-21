@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non-Fiction</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            /* background: rgb(194, 156, 255); */
+            
+        }   
+        .main{
+            width: 100%;
+            height: 100vh;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .btn{
+            width: 550px;
+            height: 70px;
+            font-size: 1.9rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border: none;
+            background: rgb(224, 50, 108);
+            color: white;
+            cursor: pointer;
+            outline: none;
+            position: relative;
+            transition: all .5s;
+            overflow: hidden;
+        }
+        #one:hover{
+            background: rgb(245, 134, 152);
+        }
+        #two:hover{
+            background: rgb(175, 48, 175);
+        }
+        #three:hover{
+            background: rgb(106, 141, 165);
+        }
+        #four:hover{
+            background: rgb(241, 99, 80);
+        }
+        #five:hover{
+            background: rgb(182, 65, 65);
+        }
+        .btn::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 100%;
+            background: linear-gradient(to left,rgba(174,174,174,0) 0%,rgba(255,255,255,0.4) 50%,transparent);
+            transform: skew(-45deg) translateX(-120px);
+            transition: all .5s;
+        }
+        .btn:hover::before{
+            transform: skew(-45deg) translateX(180px);
+        }
+        p{
+            font-size:83%;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover
+        {
+            color: rgb(233, 2, 2);
+        }
+        a:visited
+        {
+            color:rgb(0, 225, 255);
+        }
+        a:visited:hover
+        {
+            color:rgb(0, 255, 115);
+        }
+        h1,h2
+        {
+            background-image: linear-gradient(to right,rgb(195, 0, 255),rgb(0, 204, 255),#881658a8);
+            text-align: center;
+        }
+        .backg{
+            background: purple;
+            }
+    </style>
+</head>
+<body background class="backg">
+    <h1>NOVELS</h1>
+    <h2>NON-FICTION</h2>
+    <div class="main">
+        <button class="btn" id="one"><a href="https://www.lifehack.org/articles/communication/15-best-autobiographies-everyone-should-read-least-once-their-life.html">AUTOBIOGRAPHY</a><br>   </button>
+        <br>
+        <button class="btn" id="two"><a href="https://booksvooks.com/genres/biography/"><p>BIOGRAPHY</p></a></button>
+        <br>
+        <button class="btn" id="three"><a href="https://www.developgoodhabits.com/philosophical-books/"><p>PHILOSOPHICAL</p></a></button>
+        <br>
+        <button class="btn" id="four"><a href="https://www.roadaffair.com/best-travel-books/"><p>TRAVEL</p></a></button>
+        <br>
+        <button class="btn" id="five"><a href="https://blog.wob.com/10-trending-non-fiction-books-of-april-21/"><p>TRENDING !</p></a></button>
+        
+    </div>
+</body>
+</html>

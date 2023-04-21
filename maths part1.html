@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths-12</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background:rgb(17, 175, 167);
+        }
+        .box{
+         background-color:#66c4a7;
+         margin-left: 250px;
+         margin-top: 50px;
+         margin-right: 350px;
+         margin-bottom: 50px;
+         border-radius: 30px;
+         box-shadow: 20px 20px rgb(0, 10, 10);
+
+         
+        }
+        .main{
+            width: 300px;
+            height: 400px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 40px;
+            text-align: center;
+            padding-top: 110px;
+            padding-left: 20px;
+        }
+        .btn{
+            width: 350px;
+            height: 50px;
+            font-size: 1.1rem;
+            font-family: cursive;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            transition: all .5s;
+            overflow: hidden;
+            display: inline-block;
+            border-radius: 25px;
+            margin-bottom: 20px;
+            background-color: rgb(253, 230, 201);
+            
+
+    
+            
+        }
+        #one:hover{
+            background: thistle;
+        }
+        #two:hover{
+            background: skyblue;
+        }
+        #three:hover{
+            background: thistle;
+        }
+        #four:hover{
+            background: skyblue;
+        }
+        #five:hover{
+            background: thistle;
+        }
+        .btn::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 100%;
+        }
+        .btn:hover::before{
+            transform: skew(-45deg) translateX(180px);
+        }
+        p{
+            font-style: normal;
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            font-weight: bolder;
+
+    
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover
+        {
+            color: black;
+        }
+        a:visited
+        {
+            color:darkmagenta;
+        }
+        a:visited:hover
+        {
+            color:blue;
+        }
+        h1,h2
+        {
+            text-align: center;
+            color: black;
+            background-color: rgb(187, 169, 169);
+            height: 50px;
+            font-family: 'Poppins', sans-serif;
+        }
+        #one{
+            box-sizing: content-box;
+            height: fit-content;
+        }
+        img{
+            margin-top: 15px;
+            margin-left: 100px;
+            height: 400px;
+            width: 350px;
+            display: inline-block;
+            border-radius: 15px;
+            margin-bottom: 100px;
+            margin-top: 90px;
+        }
+       
+    </style>
+</head>
+<body>
+    
+    <h1>MATHEMATICS &nbsp; PART-I</h1>
+    <div class="box">
+    <img src="https://m.media-amazon.com/images/I/918O3XZAW9L.jpg">
+    <div class="main">
+        <button class="btn" id="one">
+            <p>NCERT E-Book</p>
+            <a href="https://ncert.nic.in/textbook/pdf/lemh1dd.zip"><p>Chapterwise solutions class 12 Mathematics</p></a><br>
+        </button>
+        <br>
+        <button class="btn" id="two"><a href="https://www.learncbse.in/ncert-solutions-class-12-maths/"><p>NCERT Solutions</p></a></button>
+        <br>
+        <button class="btn" id="three"><a href="https://www.learncbse.in/ncert-exemplar-problems-class-12-mathematics/"><p>NCERT Exemplar Solutions</p></a></button>
+        <br>
+        <button class="btn" id="four"><a href="https://www.learncbse.in/important-questions-for-class-12-maths/"><p>Important Questions</p></a></button>
+        <br>
+        <button class="btn" id="five"><a href="https://www.selfstudys.com/books/cbse-sample-paper/state-books/class-12th/mathematics/25103"><p>Sample Papers</p></a></button>
+    </div>
+    </div>
+    
+</body>
+</html

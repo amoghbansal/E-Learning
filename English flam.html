@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English-12</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background:rgb(119, 9, 33);
+        }
+        .box{
+         background-color:#c73c48;
+         margin-left: 250px;
+         margin-top: 50px;
+         margin-right: 350px;
+         margin-bottom: 50px;
+         border-radius: 30px;
+         box-shadow: 20px 20px rgb(0, 10, 10);
+
+         
+        }
+        .main{
+            width: 300px;
+            height: 400px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 40px;
+            text-align: center;
+            padding-top: 110px;
+            padding-left: 20px;
+        }
+        .btn{
+            width: 350px;
+            height: 50px;
+            font-size: 1.1rem;
+            font-family: cursive;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            transition: all .5s;
+            overflow: hidden;
+            display: inline-block;
+            border-radius: 25px;
+            margin-bottom: 20px;
+            background-color: rgb(253, 230, 201);
+            
+
+    
+            
+        }
+        #one:hover{
+            background: thistle;
+        }
+        #two:hover{
+            background: skyblue;
+        }
+       
+        #four:hover{
+            background: thistle;
+        }
+        #five:hover{
+            background: skyblue;
+        }
+        .btn::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 100%;
+        }
+        .btn:hover::before{
+            transform: skew(-45deg) translateX(180px);
+        }
+        p{
+            font-style: normal;
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            font-weight: bolder;
+
+    
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover
+        {
+            color: black;
+        }
+        a:visited
+        {
+            color:darkmagenta;
+        }
+        a:visited:hover
+        {
+            color:blue;
+        }
+        h1,h2
+        {
+            text-align: center;
+            color: black;
+            background-color: rgb(187, 169, 169);
+            height: 50px;
+            font-family: 'Poppins', sans-serif;
+        }
+        #one{
+            box-sizing: content-box;
+            height: fit-content;
+        }
+        img{
+            margin-top: 15px;
+            margin-left: 100px;
+            height: 400px;
+            width: 350px;
+            display: inline-block;
+            border-radius: 15px;
+            margin-bottom: 100px;
+            margin-top: 90px;
+        }
+       
+    </style>
+</head>
+<body>
+    
+    <h1>ENGLISH</h1>
+    <div class="box">
+    <img src="data:image/jpeg;base64,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">
+    <div class="main">
+        <button class="btn" id="one">
+            <p>NCERT E-Book</p>
+            <a href="https://ncert.nic.in/textbook/pdf/lefl1dd.zip"><p>Chapterwise solutions class 12 English</p></a><br>
+        </button>
+        <br>
+        <button class="btn" id="two"><a href="https://www.learncbse.in/ncert-solutions-for-class-12th-flamingo-english/"><p>NCERT Solutions</p></a></button>
+        <br>
+        <button class="btn" id="four"><a href="https://www.learncbse.in/chapter-wise-important-questions-class-12-english/"><p>Important Questions</p></a></button>
+        <br>
+        <button class="btn" id="five"><a href="https://www.selfstudys.com/books/cbse-sample-paper/english/12th/english/25285"><p>Sample Papers</p></a></button>
+    </div>
+    </div>
+    
+</body>
+</html

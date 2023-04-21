@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+}
+body{
+    background-color: black;
+}
+.main{
+    position: absolute;
+    top: 30%;
+    left: 45%;
+}
+.Maths, .Science, .English, .Hindi, .SST
+{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.MathsButton, .ScienceButton, .EnglishButton, .HindiButton, .SSTButton{
+    width: 180px;
+    height: 50px;
+    border: 2px solid rgb(50, 50, 50);
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+.MathsButton p, .ScienceButton p, .EnglishButton p, .HindiButton p, .SSTButton p {
+    color: rgb(95, 95, 95);
+    letter-spacing: 0.2rem;
+    font-size: 1.2rem;
+    transition: all 0.4s;
+}
+
+.MathsButton span, .ScienceButton span, .EnglishButton span, .HindiButton span, .SSTButton span{
+    position: absolute;
+    transition: all 0.4s;
+}
+.MathsButton span:nth-child(2),.MathsButton span:nth-child(3){
+    width: 100%;
+    height: 2px;
+    background-color: #00ff00;
+}
+.ScienceButton span:nth-child(2),.ScienceButton span:nth-child(3){
+    width: 100%;
+    height: 2px;
+    background-color: pink;
+}
+.EnglishButton span:nth-child(2),.EnglishButton span:nth-child(3){
+    width: 100%;
+    height: 2px;
+    background-color: red;
+}
+.HindiButton span:nth-child(2),.HindiButton span:nth-child(3){
+    width: 100%;
+    height: 2px;
+    background-color: lightblue;
+}
+.SSTButton span:nth-child(2),.SSTButton span:nth-child(3){
+    width: 100%;
+    height: 2px;
+    background-color: purple;
+}
+
+.MathsButton span:nth-child(2), .ScienceButton span:nth-child(2), .EnglishButton span:nth-child(2), .HindiButton span:nth-child(2), .SSTButton span:nth-child(2){
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+}
+.MathsButton span:nth-child(3), .ScienceButton span:nth-child(3), .EnglishButton span:nth-child(3), .HindiButton span:nth-child(3), .SSTButton span:nth-child(3){
+    bottom: 0;
+    left: 0;
+    transform: translateX(100%);
+}
+
+.MathsButton span:nth-child(4),.MathsButton span:nth-child(5){
+    width: 2px;
+    height: 100%;
+    background-color: #00ff00;
+}
+.ScienceButton span:nth-child(4),.ScienceButton span:nth-child(5){
+    width: 2px;
+    height: 100%;
+    background-color: pink;
+}
+.EnglishButton span:nth-child(4),.EnglishButton span:nth-child(5){
+    width: 2px;
+    height: 100%;
+    background-color: red;
+}
+.HindiButton span:nth-child(4),.HindiButton span:nth-child(5){
+    width: 2px;
+    height: 100%;
+    background-color: lightblue;
+}
+.SSTButton span:nth-child(4),.SSTButton span:nth-child(5){
+    width: 2px;
+    height: 100%;
+    background-color: purple;
+}
+
+.MathsButton span:nth-child(4), .ScienceButton span:nth-child(4), .EnglishButton span:nth-child(4), .HindiButton span:nth-child(4), .SSTButton span:nth-child(4){
+    top: 0;
+    right: 0;
+    transform: translateY(-100%);
+}
+.MathsButton span:nth-child(5), .ScienceButton span:nth-child(5), .EnglishButton span:nth-child(5), .HindiButton span:nth-child(5), .SSTButton span:nth-child(5){
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+}
+.MathsButton:hover span, .ScienceButton:hover span, .EnglishButton:hover span, .HindiButton:hover span, .SSTButton:hover span{
+    transform: translate(0);
+}
+a
+{
+    text-decoration: none;
+    font-family: cursive;
+}
+.Maths .MathsButton a{
+    color: yellow;
+}
+.Science .ScienceButton a{
+    color: deeppink;
+}
+.English .EnglishButton a{
+    color: red;
+}
+.Hindi .HindiButton a{
+    color: green;
+}
+.SST .SSTButton a{
+    color: blue;
+}
+h1{
+    background-image: linear-gradient(to right, red,blue);
+    background-size:200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 70%;
+    text-align: center;
+}
+h2{
+    background-image: linear-gradient(to left,green,yellow);
+    background-size:200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 70%;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+    <h1>Class 10</h1>
+    <br>
+    <h2>Core Subjects</h2>
+    <br>
+    <div class="Maths">
+        <div class="MathsButton">
+            <p><a href="Maths.html">Maths</a></p>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="Science">
+        <div class="ScienceButton">
+            <p><a href="Science.html">Science</a></p>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="English">
+        <div class="EnglishButton">
+            <p><a href="English.html">English</a></p>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="Hindi">
+        <div class="HindiButton">
+            <p><a href="Hindi.html">Hindi</a></p>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="SST">
+        <div class="SSTButton">
+            <p><a href="SST.html">SST</a></p>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

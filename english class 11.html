@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: teal;
+        }
+        .main{
+            width: 100%;
+            height: 100vh;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .btn{
+            width: 150px;
+            height: 40px;
+            font-size: 1.1rem;
+            font-family: cursive;
+            border: none;
+            background: light pink;
+            color: red;
+            cursor: pointer;
+            outline: none;
+            position: relative;
+            transition: all .5s;
+            overflow: hidden;
+        }
+        #one:hover{
+            background: yellow;
+        }
+        #two:hover{
+            background: purple;
+        }
+        #three:hover{
+            background: lime;
+        }
+        #four:hover{
+            background: skyblue;
+        }
+        #five:hover{
+            background: brown;
+        }
+        .btn::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 100%;
+            background: linear-gradient(to left,rgba(174,174,174,0) 0%,rgba(255,255,255,0.4) 50%,transparent);
+            transform: skew(-45deg) translateX(-120px);
+            transition: all .5s;
+        }
+        .btn:hover::before{
+            transform: skew(-45deg) translateX(180px);
+        }
+        p{
+            font-size:83%;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover
+        {
+            color: black;
+        }
+        a:visited
+        {
+            color:magenta;
+        }
+        a:visited:hover
+        {
+            color:blue;
+        }
+        h1,h2
+        {
+            background-image: linear-gradient(to right, pink,yellow);
+            text-align: center;
+        }
+        #one{
+            box-sizing: content-box;
+            height: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <h1>Class 11</h1>
+    <h2>English</h2>
+    <div class="main">
+        <button class="btn" id="one">
+            <p>NCERT E-Book</p>
+            <a href="https://ncert.nic.in/textbook/pdf/kehb1dd.zip">English ncert class 11</a><br>
+        </button>
+        <br>
+        <button class="btn" id="two"><a href=""><p>NCERT Solutions</p></a></button>
+        <br>
+        <button class="btn" id="three"><a href=""><p>NCERT Exemplar Solutions</p></a></button>
+        <br>
+        <button class="btn" id="four"><a href=""><p>Important Questions</p></a></button>
+        <br>
+        <button class="btn" id="five"><a href=""><p>Sample Papers</p></a></button>
+        
+    </div>
+</body>
+</html

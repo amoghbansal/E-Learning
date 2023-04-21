@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+.header {
+  padding: 80px;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  }
+.header::before
+{
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  background-image: url("https://essentialsiteskills.co.uk/storage/app/media/uploaded-files/E%20Learning%20Blog.jpg");
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+}
+.header-content
+{
+  position:relative;
+}
+.header h1 {
+  font-size: 40px;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  /* position: relative; */
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+.navbar a.right {
+  float: right;
+}
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+.main {   
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+.fakeimg {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+.footer {
+  position: relative;
+  align-items: center;
+  text-align: center;
+}
+
+.footer:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background-image: url("https://th.bing.com/th/id/R.666720f291574e67d65c37c419db2ca7?rik=Gn8jaSogR1nE5Q&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f12%2fCloudy-Sky-Wallpaper-Free-Download.jpg&ehk=n4ZxlUxFGC7iLHiCIOq0gmC%2b5ZndgSzF11FP3k2HVj8%3d&risl=&pid=ImgRaw&r=0");  
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+.footer-content {
+  position: relative;
+}
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width:100%;
+  }
+}
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: teal;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.cntnr
+    {
+    position: relative;
+    margin: auto;
+    }
+    .text
+    {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 20px 15px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 40%;
+    background: rgba(0, 0, 0, .7);
+    text-align: left;
+    }
+    .dot
+    {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: transparent;
+    border-color: #ddd;
+    border-width: 5 px;
+    border-style: solid;
+    border-radius: 50%;
+    display: inline-block;
+    transition: border-color 0.6s ease;
+    }
+    .active
+    {
+    border-color: #666;
+    }
+    .fade
+    {
+    -webkit-animation-name: fade-image;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade-image;
+    animation-duration: 1.5s;
+    }
+    @-webkit-keyframes fade-image
+    {
+    from {opacity: .4}
+    to {opacity: 1}
+    }
+    @keyframes fade-image
+    {
+    from {opacity: .4}
+    to {opacity: 1}
+    }
+    @media only screen and (max-width: 300px)
+    {
+    .text {font-size: 11px}
+    }
+    .cntnr img
+    {
+      height: 300px;
+      width: 100%;
+    }
+    #diff
+    {
+      background-color: darkblue;
+      height: 4px;
+    }
+    td
+    {
+      text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <center>
+  <div class="header-content">
+  <h1 style="color:brown">Enlighten-An E-learning website</h1>
+  <p style="color:blue">All your favorites at a single place for free!</p>
+  </div>
+</center>
+</div>
+<div class="navbar">
+  <a href="#home">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Academic 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Class 10(1).html">Class 10</a>
+      <a href="class11.html">Class 11</a>
+      <a href="Class12.html">Class 12</a>
+      <a href="https://drive.google.com/file/d/0B4YMparEOQtOMEc0SHU5V0RiRVk/view?resourcekey=0-atDJRADKfoCD4OYUDlEk3w">Dictionary</a>
+    </div>
+  </div>
+<div class="dropdown">
+  <button class="dropbtn">Non-Academic 
+    <i class="fa fa-caret-down"></i>
+  </button>
+    <div class="dropdown-content">
+      <a href="fiction.html">Fiction</a>
+      <a href="non-fiction.html">Non-Fiction</a>
+      <a href="https://www.gocomics.com/comics/a-to-z">Comics</a>
+      <a href="https://www.bing.com/ck/a?!&&p=d5e9eb22c763ab32JmltdHM9MTY2OTUwNzIwMCZpZ3VpZD0yYzJjM2MwMi03M2I5LTY4NzgtMTI1NS0yZTE4NzJiZjY5ZjUmaW5zaWQ9NTI3NA&ptn=3&hsh=3&fclid=2c2c3c02-73b9-6878-1255-2e1872bf69f5&psq=recipes&u=a1aHR0cHM6Ly93d3cudmVncmVjaXBlc29maW5kaWEuY29tL3JlY2lwZXMv&ntb=1">Recipes</a>
+    </div>
+  </div> 
+  <a href="html pro/bestseller.html">Best Sellers</a>
+  <a href="latest arrivals.html">Latest Arrivals</a>
+  <a href="Login1.php" class="right">Login</a>
+</div>
+<div class="row">
+  <div class="side">
+    <h2>About Us</h2>
+    <h5>Photo of us:</h5>
+    <div class="fakeimg"><img src="B612_20220928_133118_225.jpg" alt="Group" height="100%" width="100%"></div><br>    <p>We are a team of four JIITians having a keen enthusiasm in full stack web development. <br> This is a DSW mini project based on E-learning.</p>
+    <hr id="diff">
+    <h3>Offers</h3>
+    <p>Grab Them before they're gone!!</p>
+    <div class="fakeimg"><img src="https://static.vecteezy.com/system/resources/previews/000/177/552/original/vector-bright-color-sale-discount-banner-template.jpg" alt="" height="120px" width="100%"></div><hr>
+    <div class="fakeimg"><img src="https://static.vecteezy.com/system/resources/previews/000/178/175/original/vector-sale-discount-banner-poster-or-flyer-template.jpg" alt="" height="120px" width="100%"></div><hr>
+    <div class="fakeimg"><img src="https://static.vecteezy.com/system/resources/previews/000/177/184/original/sale-discount-deal-banner-template-vector.jpg" alt="" height="120px" width="100%"></div><hr>
+    <div class="fakeimg"><img src="https://freedesignfile.com/upload/2019/07/Discount-banner-vector.jpg" alt="" height="100%" width="100%"></div>
+  </div>
+  <div class="main">
+    <div class="cntnr">
+      <h2>Popularity in Libraries</h2>
+    <h5>Glimpses of some students reading our books with intense joy and pleasure!</h5>
+      <div class="image-sliderfade fade">
+        <img src="https://www.magd.cam.ac.uk/sites/default/files/styles/1302x600/public/2017-09/magdalene_college_library.jpg?itok=1v6BgUME">
+        <div class="text">Harvard University</div>
+      </div>
+      <div class="image-sliderfade fade">
+        <img src="https://ak3.picdn.net/shutterstock/videos/1335583/thumb/1.jpg">
+        <div class="text">Oxford University</div>
+      </div>
+      <div class="image-sliderfade fade">
+        <img src="https://cdn6.dissolve.com/p/D430_50_034/D430_50_034_1200.jpg">
+        <div class="text">IIT Delhi</div>
+      </div>
+      <div class="image-sliderfade fade">
+        <img src="https://th.bing.com/th/id/R.391ce227ce8959c43ccf8126b52709c2?rik=MR565zR9yZOUWQ&riu=http%3a%2f%2fcdn.shutterstock.com%2fshutterstock%2fvideos%2f18695513%2fthumb%2f8.jpg&ehk=m42FcxNUw7mEr%2fZL7o%2brYO6z0ENGZ9JUoC2l4trB8MY%3d&risl=&pid=ImgRaw&r=0">
+        <div class="text">Presidium</div>
+      </div>
+      </div>
+      <br>
+      <div style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+    <p>And many more...</p>
+    <p>Libraries across the globe are getting regular supplies from our organisation. Go to any library you'll find at least one book with a publication of Enlighten!</p>
+    <br>
+    <h2>Features</h2>
+    <h5>Some of our features for our immense popularity are listed below:</h5>
+    <div class="fakeimg" style="height:200px;"><img src="Screenshot 2022-11-27 012150.png" alt="" height="100%" width="100%"></div>
+    <p>Results</p>
+    <p>Due to these extreme features we are opening new branches across the globe on a frequent basis. Moreover we are getting popular over the internet due to the audience's support and faith in us.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <div style="font-family:cursive" class="footer-content">
+    <br>
+    <h2 style="color:darkgoldenrod">&copy; Team Enlighten </h2>
+    <h3 style="color:crimson">Contact Us:</h3>
+      <br>
+      <center>
+      <table>
+        <h4 style="color:blueviolet">Batch-B12</h4>
+        <th>
+          <td style="font-weight: bolder;">Full Name</td>
+          <td style="font-weight: bolder;">Enrollment Number</td>
+          <td style="font-weight: bolder;">Mobile Number</td>
+        </th>
+        <tr>
+          <td></td>
+          <td style="color:blue">Bhavya Malik</td>
+          <td style="color:green">21803002</td>
+          <td style="color:red">+91 88007 09706</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td style="color:blue">Avantika Singh</td>
+          <td style="color:green">21803005</td>
+          <td style="color:red">+91 96250 31926</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td style="color:blue">Amogh Bansal</td>
+          <td style="color:green">21803008</td>
+          <td style="color:red">+91 98737 42481</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td style="color:blue">Prerna Sharma</td>
+          <td style="color:green">21803010</td>
+          <td style="color:red">+91 78400 52156</td>
+        </tr>
+      </table>
+    </center>
+      <br> or visit
+      <a href="https://earth.google.com/web/search/JAYPEE+INSTITUTE+OF+INFORMATION+TECHNOLOGY,+A+Block,+Block+A,+Industrial+Area,+Sector+62,+Noida,+Uttar+Pradesh/@28.6297291,77.3720556,201.20298928a,913.77071012d,35y,0h,45t,0r/data=CtsBGrABEqkBCiUweDM5MGNlNTUxNDkxYjNjZTc6MHg3MzM1ZDlmY2ZkNGQ5ZGIwGerWIe01oTxAIcuSSsLPV1NAKm5KQVlQRUUgSU5TVElUVVRFIE9GIElORk9STUFUSU9OIFRFQ0hOT0xPR1ksIEEgQmxvY2ssIEJsb2NrIEEsIEluZHVzdHJpYWwgQXJlYSwgU2VjdG9yIDYyLCBOb2lkYSwgVXR0YXIgUHJhZGVzaBgCIAEiJgokCZlQc3AjaTpAEf_FhgxxNirAGTVdhHVx51xAIXdWVV3iUxxAKAI6AwoBMQ?pli=1&authuser=1">Our College</a>
+    <br>
+  </div>
+</div>
+</body>
+<script>
+  var slideIndex = 0;
+  showSlides();
+  function showSlides()
+  {
+    var i;
+    var slides = document.getElementsByClassName("image-sliderfade");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length)
+    {
+      slideIndex = 1;
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    setTimeout(showSlides, 3000);
+  }
+</script>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: rgb(0, 8, 46);
+        }
+        .main{
+            width: 100%;
+            height: 100vh;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .btn{
+            width: 150px;
+            height: 40px;
+            font-size: 1.1rem;
+            font-family: cursive;
+            border: none;
+            background: white;
+            color: red;
+            cursor: pointer;
+            outline: none;
+            position: relative;
+            transition: all .5s;
+            overflow: hidden;
+        }
+        #one:hover{
+            background: pink;
+        }
+        #two:hover{
+            background: purple;
+        }
+        #three:hover{
+            background: lime;
+        }
+        #four:hover{
+            background: skyblue;
+        }
+        #five:hover{
+            background: brown;
+        }
+        .btn::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 100%;
+            background: linear-gradient(to left,rgba(174,174,174,0) 0%,rgba(255,255,255,0.4) 50%,transparent);
+            transform: skew(-45deg) translateX(-120px);
+            transition: all .5s;
+        }
+        .btn:hover::before{
+            transform: skew(-45deg) translateX(180px);
+        }
+        p{
+            font-size:83%;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover
+        {
+            color: black;
+        }
+        a:visited
+        {
+            color:magenta;
+        }
+        a:visited:hover
+        {
+            color:blue;
+        }
+        h1,h2
+        {
+            background-image: linear-gradient(to right,red,blue,green);
+            text-align: center;
+        }
+        #one{
+            box-sizing: content-box;
+            height: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <h1>Class 11</h1>
+    <h2>Maths</h2>
+    <div class="main">
+        <button class="btn" id="one">
+            <p>NCERT E-Book</p>
+            <a href="https://ncert.nic.in/textbook/pdf/kemh1dd.zip">Complete maths book(Part 1 and 2)</a><br>
+        </button>
+        <br>
+        <button class="btn" id="two"><a href="https://www.learncbse.in/ncert-solutions-for-class-11-maths/"><p>NCERT Solutions</p></a></button>
+        <br>
+        <button class="btn" id="three"><a href="https://byjus.com/ncert-exemplar-class-12-maths/"><p>NCERT Exemplar Solutions</p></a></button>
+        <br>
+        <button class="btn" id="four"><a href=""><p>Important Questions</p></a></button>
+        <br>
+        <button class="btn" id="five"><a href="https://ncertmcq.com/cbse-sample-papers-for-class-11-maths/"><p>Sample Papers</p></a></button>
+        
+    </div>
+</body>
+</html>

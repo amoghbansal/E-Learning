@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+}
+body{
+    background-color: white;
+}
+.main{
+    position: absolute;
+    top: 30%;
+    left: 45%;
+}
+.Maths, .Physics, .Chemistry, .English, .ComputerScience
+{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.MathsButton, .PhysicsButton, .ChemistryButton, .EnglishButton, .ComputerScienceButton{
+    width: 180px;
+    height: 50px;
+    border: 2px solid rgb(50, 50, 50);
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+.MathsButton p, .PhysicsButton p, .ChemistryButton p, .EnglishButton p, .ComputerScienceButton p {
+    color: rgb(95, 95, 95);
+    letter-spacing: 0.2rem;
+    font-size: 1.2rem;
+    transition: all 0.4s;
+}
+
+.MathsButton span, .PhysicsButton span, .ChemistryButton span, .EnglishButton span, .ComputerScienceButton span{
+    position: absolute;
+    transition: all 0.4s;
+}
+.MathsButton span:nth-child(2),.MathsButton span:nth-child(3){
+    width: 100%;
+    height: 2px;
+    background-color: red;
+}
+.PhysicsButton span:nth-child(2),.PhysicsButton span:nth-child(3){
+    width: 100%;
+    height: 2px;
+    background-color: pink;
+}
+.ChemistryButton span:nth-child(2),.ChemistryButton span:nth-child(3){
+    width: 100%;
+    height: 2px;
+    background-color: blue;
+}
+.EnglishButton span:nth-child(2),.EnglishButton span:nth-child(3){
+    width: 100%;
+    height: 2px;
+    background-color: lightblue;
+}
+.ComputerScienceButton span:nth-child(2),.ComputerScienceButton span:nth-child(3){
+    width: 100%;
+    height: 2px;
+    background-color: purple;
+}
+
+.MathsButton span:nth-child(2), .PhysicsButton span:nth-child(2), .ChemistryButton span:nth-child(2), .EnglishButton span:nth-child(2), .ComputerScienceButton span:nth-child(2){
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+}
+.MathsButton span:nth-child(3), .PhysicsButton span:nth-child(3), .ChemistryButton span:nth-child(3), .EnglishButton span:nth-child(3), .ComputerScienceButton span:nth-child(3){
+    bottom: 0;
+    left: 0;
+    transform: translateX(100%);
+}
+
+.MathsButton span:nth-child(4),.MathsButton span:nth-child(5){
+    width: 2px;
+    height: 100%;
+    background-color: red;
+}
+.PhysicsButton span:nth-child(4),.PhysicsButton span:nth-child(5){
+    width: 2px;
+    height: 100%;
+    background-color: pink;
+}
+.ChemistryButton span:nth-child(4),.ChemistryButton span:nth-child(5){
+    width: 2px;
+    height: 100%;
+    background-color: blue;
+}
+.EnglishButton span:nth-child(4),.EnglishButton span:nth-child(5){
+    width: 2px;
+    height: 100%;
+    background-color: lightblue;
+}
+.ComputerScienceButton span:nth-child(4),.ComputerScienceButton span:nth-child(5){
+    width: 2px;
+    height: 100%;
+    background-color: purple;
+}
+
+.MathsButton span:nth-child(4), .PhysicsButton span:nth-child(4), .ChemistryButton span:nth-child(4), .EnglishButton span:nth-child(4), .ComputerScienceButton span:nth-child(4){
+    top: 0;
+    right: 0;
+    transform: translateY(-100%);
+}
+.MathsButton span:nth-child(5), .PhysicsButton span:nth-child(5), .ChemistryButton span:nth-child(5), .EnglishButton span:nth-child(5), .ComputerScienceButton span:nth-child(5){
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+}
+.MathsButton:hover span, .PhysicsButton:hover span, .ChemistryButton:hover span, .EnglishButton:hover span, .ComputerScienceButton:hover span{
+    transform: translate(0);
+}
+a
+{
+    text-decoration: none;
+    font-family: cursive;
+}
+.Maths .MathsButton a{
+    color: violet;
+}
+.Physics .PhysicsButton a{
+    color: deeppink;
+}
+.Chemistry .ChemistryButton a{
+    color: red;
+}
+.English .EnglishButton a{
+    color: green;
+}
+.ComputerScience .ComputerScienceButton a{
+    color: blue;
+}
+h1{
+    background-image: linear-gradient(to right, red,blue);
+    background-size:200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 70%;
+    text-align: center;
+}
+h2{
+    background-image: linear-gradient(to left,green,yellow);
+    background-size:200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 70%;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+    <h1>Class 12</h1>
+    <br>
+    <h2>Core Subjects</h2>
+    <br>
+    <div class="Maths">
+        <div class="MathsButton">
+            <p><a href="maths part1.html">Maths</a></p>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="Physics">
+        <div class="PhysicsButton">
+            <p><a href="class 12 phy part-2.html">Physics</a></p>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="Chemistry">
+        <div class="ChemistryButton">
+            <p><a href="chemistry part-1 class 12.html">Chemistry</a></p>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="English">
+        <div class="EnglishButton">
+            <p><a href="English flam.html">English</a></p>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="ComputerScience">
+        <div class="ComputerScienceButton">
+            <p><a href="cs 12.html">ComputerScience</a></p>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

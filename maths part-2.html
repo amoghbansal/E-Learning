@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths-12</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background:rgb(226, 55, 55);
+        }
+        .box{
+         background-color:#f57f7f;
+         margin-left: 250px;
+         margin-top: 50px;
+         margin-right: 350px;
+         margin-bottom: 50px;
+         border-radius: 30px;
+         box-shadow: 20px 20px rgb(0, 10, 10);
+
+         
+        }
+        .main{
+            width: 300px;
+            height: 400px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 40px;
+            text-align: center;
+            padding-top: 110px;
+            padding-left: 20px;
+        }
+        .btn{
+            width: 350px;
+            height: 50px;
+            font-size: 1.1rem;
+            font-family: cursive;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            transition: all .5s;
+            overflow: hidden;
+            display: inline-block;
+            border-radius: 25px;
+            margin-bottom: 20px;
+            background-color: rgb(253, 230, 201);
+            
+
+    
+            
+        }
+        #one:hover{
+            background: thistle;
+        }
+        #two:hover{
+            background: skyblue;
+        }
+        #three:hover{
+            background: thistle;
+        }
+        #four:hover{
+            background: skyblue;
+        }
+        #five:hover{
+            background: thistle;
+        }
+        .btn::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 100%;
+        }
+        .btn:hover::before{
+            transform: skew(-45deg) translateX(180px);
+        }
+        p{
+            font-style: normal;
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            font-weight: bolder;
+
+    
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover
+        {
+            color: black;
+        }
+        a:visited
+        {
+            color:darkmagenta;
+        }
+        a:visited:hover
+        {
+            color:blue;
+        }
+        h1,h2
+        {
+            text-align: center;
+            color: black;
+            background-color: rgb(187, 169, 169);
+            height: 50px;
+            font-family: 'Poppins', sans-serif;
+        }
+        #one{
+            box-sizing: content-box;
+            height: fit-content;
+        }
+        img{
+            margin-top: 15px;
+            margin-left: 100px;
+            height: 400px;
+            width: 350px;
+            display: inline-block;
+            border-radius: 15px;
+            margin-bottom: 100px;
+            margin-top: 90px;
+        }
+       
+    </style>
+</head>
+<body>
+    
+    <h1>MATHEMATICS &nbsp; PART-2</h1>
+    <div class="box">
+    <img src="data:image/jpeg;base64,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">
+    <div class="main">
+        <button class="btn" id="one">
+            <p>NCERT E-Book</p>
+            <a href="https://ncert.nic.in/textbook/pdf/lemh2dd.zip"><p>Chapterwise solutions class 12 Mathematics</p></a><br>
+        </button>
+        <br>
+        <button class="btn" id="two"><a href="https://www.learncbse.in/ncert-solutions-class-12-maths/"><p>NCERT Solutions</p></a></button>
+        <br>
+        <button class="btn" id="three"><a href="https://www.learncbse.in/ncert-exemplar-problems-class-12-mathematics/"><p>NCERT Exemplar Solutions</p></a></button>
+        <br>
+        <button class="btn" id="four"><a href="https://www.learncbse.in/important-questions-for-class-12-maths/"><p>Important Questions</p></a></button>
+        <br>
+        <button class="btn" id="five"><a href="https://www.selfstudys.com/books/cbse-sample-paper/state-books/class-12th/mathematics/25103"><p>Sample Papers</p></a></button>
+    </div>
+    </div>
+    
+</body>
+</html
